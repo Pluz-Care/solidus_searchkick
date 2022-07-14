@@ -120,7 +120,7 @@ module Spree::Search
     end
 
     def includes_clause
-      includes_clause =  { master: [:currently_valid_prices] }
+      includes_clause =  { master: [:prices] }
       includes_clause[:master] << :images if include_images
       includes_clause
     end
