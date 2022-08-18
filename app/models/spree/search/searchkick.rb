@@ -13,7 +13,8 @@ module Spree::Search
       # Sample configurable_attribute
       attr_accessor :configurable_attribute
 
-      def initialize
+      def initialize(params)
+        super(params)
         @configurable_attribute = false
       end
     end
